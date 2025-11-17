@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academia de Ajedrez Profesional - Curso presencial en Madrid. Aprende ajedrez con expertos personalizados según tu nivel. Clases grupales con personas de tu mismo nivel.">
+    <meta name="keywords" content="ajedrez Madrid, curso ajedrez, clases ajedrez, ajedrez presencial, aprender ajedrez Madrid, clases grupales ajedrez">
+    <meta name="author" content="Academia de Ajedrez Profesional">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Academia de Ajedrez Profesional - Madrid">
+    <meta property="og:description" content="Curso presencial de ajedrez en Madrid. Clases grupales personalizadas según tu nivel con expertos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://academiadeajedrezprofesional.com">
+    <meta property="og:image" content="https://placehold.co/1200x630/2563eb/ffffff?text=Academia+de+Ajedrez+Madrid">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Academia de Ajedrez Profesional - Madrid">
+    <meta name="twitter:description" content="Clases presenciales de ajedrez en Madrid. Personalizadas según tu nivel.">
+    <meta name="twitter:image" content="https://placehold.co/1200x600/2563eb/ffffff?text=Clases+de+Ajedrez+Madrid">
+
+    <title>Academia de Ajedrez Profesional - Clases Presenciales en Madrid</title>
+
+    <!-- SEO Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Curso de Ajedrez Profesional",
+        "description": "Domina el ajedrez con nuestro curso presencial en Madrid. Clases grupales personalizadas según tu nivel con expertos.",
+        "provider": {
+            "@type": "Organization",
+            "name": "Academia de Ajedrez Profesional",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Madrid",
+                "addressCountry": "ES"
+            }
+        },
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "price": "0",
+            "category": "Education"
+        }
+    }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="scroll-top" id="scrollTop">↑</div>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo">♟️</div>
+            <div>
+                <h1>Academia de Ajedrez Profesional</h1>
+                <p class="subtitle">Clases Presenciales Exclusivas en Madrid</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#presentation">Inicio</a></li>
+                <li><a href="#survey">Nivel</a></li>
+                <li><a href="#chat">Asistente</a></li>
+                <li><a href="#location">Ubicación</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="presentation">
+            <h2>Domina el Ajedrez con Clases Presenciales en Madrid</h2>
+            <p>¿Quieres elevar tu juego al siguiente nivel? En la Academia de Ajedrez Profesional ofrecemos clases presenciales exclusivas en Madrid, donde conocerás y aprenderás junto a personas de tu mismo nivel. Nuestra metodología única combina enseñanza experta con interacción social en un ambiente profesional.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Grupos por Nivel</h3>
+                    <p>Clases con personas de tu mismo nivel para un aprendizaje óptimo y social.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏫</div>
+                    <h3>Ambiente Profesional</h3>
+                    <p>En Getafe Madrid con distintos tableros exclusivos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Expertos Certificados</h3>
+                    <p>Instructores con título y años de experiencia.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Red de Contactos</h3>
+                    <p>Conoce nuevos amigos y comparte pasión por el ajedrez.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="survey">
+            <h2>Descubre Tu Nivel de Ajedrez</h2>
+            <div class="survey-container">
+                <div class="question">¿Cuál es tu experiencia actual con el ajedrez?</div>
+                <div class="options-grid">
+                    <div class="option-btn" data-level="principiante">
+                        <div>Principiante</div>
+                        <small>Sé mover las piezas</small>
+                    </div>
+                    <div class="option-btn" data-level="intermedio">
+                        <div>Intermedio</div>
+                        <small>Conozco aperturas básicas</small>
+                    </div>
+                    <div class="option-btn" data-level="avanzado">
+                        <div>Avanzado</div>
+                        <small>Juego torneos regularmente</small>
+                    </div>
+                </div>
+                <button id="surveyNext" class="submit-btn" style="display:none; max-width: 300px; margin: 0 auto;">Continuar con el Curso</button>
+            </div>
+        </section>
+
+        <section id="chat">
+            <h2>Asistente de Ajedrez Virtual</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-bubble bot-bubble">
+                            ¡Hola! Soy tu asistente de ajedrez. ¿En qué puedo ayudarte hoy?
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="userInput" placeholder="Escribe tu pregunta sobre ajedrez o clases...">
+                    <button id="sendBtn">Enviar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Nuestra Ubicación Presencial</h2>
+            <div class="location-info">
+                <div class="location-card">
+                    <h3>📍 Centro Cultural de Madrid en Getafe</h3>
+                    <p><strong>Dirección:</strong> Getafe, espartales, - Madrid</p>
+                    <p><strong>Horario:</strong> Viernes a Domingos de 16:00 a 17:00</p>
+                    <p><strong>Horario opcional posible:</strong> contactanos y nos adaptaremos a tu mejor horario. </p>
+                    <p><strong>Modalidad:</strong> Exclusivamente presencial (si desea online)</p>
+                </div>
+                <div class="location-card">
+                    <h3>🎯 Experiencia Social Única</h3>
+                    <p>Conoce personas con tu mismo interés por el ajedrez</p>
+                    <p>Ambiente colaborativo y competitivo al mismo tiempo</p>
+                    <p>Intercambio de ideas y estrategias en persona</p>
+                    <p>Networking con otros aficionados al ajedrez</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Inscríbete en Nuestras Clases Presenciales</h2>
+            <div class="contact-info">
+                <p>¿Tienes preguntas? ¡Llámanos!</p>
+                <div class="phone-number">📞 611 34 10 09</div>
+                <p>Estamos disponibles de lunes a viernes de 9:00 a 18:00</p>
+                <a href="https://wa.me/34611341009" class="submit-btn" style="display: inline-block; max-width: 350px; margin-top: 1.5rem;">
+                    Contactar por WhatsApp
+                </a>
+            </div>
+            <form id="contactForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" required placeholder="Tu nombre completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" required placeholder="tu@email.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="level">Nivel de Ajedrez</label>
+                    <select id="level" required>
+                        <option value="">Selecciona tu nivel</option>
+                        <option value="principiante">Principiante</option>
+                        <option value="intermedio">Intermedio</option>
+                        <option value="avanzado">Avanzado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comentarios o Preguntas</label>
+                    <textarea id="comments" placeholder="¿En qué podemos ayudarte?"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Inscripción</button>
+            </form>
+            <div class="confirmation" id="confirmationMessage">
+                <h3>¡Inscripción Enviada!</h3>
+                <p>Gracias por tu interés. Nos pondremos en contacto contigo pronto al número 611 34 10 09 para programar tu primera clase presencial.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="YouTube">📺</a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> Academia de Ajedrez Profesional. Todos los derechos reservados.</p>
+        <p>📍 Madrid, España | 📞 611 34 10 09 | 📧 info@academiadeajedrezprofesional.com</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
